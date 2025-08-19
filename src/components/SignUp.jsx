@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 
@@ -363,12 +364,9 @@ const SignUp = () => {
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 Already have an account?
-                <a
-                  href="#"
-                  className="text-green-600 font-medium hover:underline ml-1"
-                >
-                  Log In
-                </a>
+                              <Link to="/login" className="text-green-600 font-medium hover:underline ml-1">
+            Log in
+          </Link>
               </p>
             </div>
           </div>
