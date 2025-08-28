@@ -90,7 +90,7 @@ const SignUp = () => {
       {/* Background Gradient Overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(191,219,254,0.6),_transparent_40%),radial-gradient(circle_at_bottom_left,_#c084fc,_transparent_50%)]"></div>
 
-      <div className="fixed top-4 left-6 flex items-center gap-2">
+      <div className="fixed top-0 w-full py-2.5 backdrop-blur-2xl shadow-gray-500 shadow-sm left-6 z-20 flex items-center gap-2 bg-white/70">
         <RiSecurePaymentLine className="size-8 text-purple-600" />
         <h1 className="text-3xl font-bold text-gray-800">SwiftPay</h1>
       </div>
