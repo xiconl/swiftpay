@@ -64,7 +64,7 @@ const Login = () => {
       {/* Logo */}
       <div className="fixed top-4 left-6 flex items-center gap-2">
         <RiSecurePaymentLine className="size-8 text-purple-600" />
-        <h1 className="text-3xl font-bold text-gray-800">SwiftPay</h1>
+        <h1 className="text-3xl font-bold text-gray-800 fold">SwiftPay</h1>
       </div>
 
       {/* Form Card */}
@@ -72,7 +72,7 @@ const Login = () => {
         <div className="max-w-md w-full bg-white/40 backdrop-blur-lg rounded-lg shadow-md overflow-hidden">
           {/* Header */}
           <div className="py-4 px-6">
-            <h1 className="text-2xl text-purple-500 font-extrabold text-center">
+            <h1 className="text-2xl text-purple-500 font-extrabold text-center fold">
               Log in
             </h1>
             <p className="mt-2 text-gray-700 text-center ">

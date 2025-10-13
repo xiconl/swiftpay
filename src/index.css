@@ -1,2 +1,23 @@
 @import "tailwindcss";
 
+.fold{
+    font-family: "Young Serif", serif;
+        font-weight: 900;
+        font-style: normal;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
