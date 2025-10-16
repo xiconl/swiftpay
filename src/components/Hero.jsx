@@ -7,10 +7,16 @@ import {
 } from "react-icons/fa";
 import { BiSolidZap } from "react-icons/bi";
 import { LuZap } from "react-icons/lu";
+import { FiZap, FiGlobe } from "react-icons/fi";
+import { MdSupportAgent } from "react-icons/md";
+import FeaturedCard from "./FeaturedCard";
 
 const Hero = () => {
   return (
+    <div>
     <section className="relative min-h-[90vh] w-full overflow-hidden bg-gradient-to-br from-background via-indigo-500/50 to-pink-400 flex flex-col md:flex-row items-center justify-between px-6 sm:px-10 md:px-16 py-20 md:py-28">
+
+        
       {/* Background Floating Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <FaRegCreditCard className="text-pink-400/30 absolute top-1/4 left-[10%] w-8 h-8 animate-[float_6s_ease-in-out_infinite]" />
@@ -75,7 +81,18 @@ const Hero = () => {
   <img
     src="/hero-payment.png"
     alt="SwiftPay App Preview"
-    className="relative w-full max-w-sm sm:max-w-md rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500 object-contain"
+     className="
+    relative 
+    w-[100%]                                
+    md:max-w-lg           
+    rounded-2xl 
+    shadow-2xl 
+    transform 
+    hover:scale-[1.03] 
+    transition-transform 
+    duration-500 
+    object-contain
+  "
   />
 
   {/* Floating Badge - Speed */}
@@ -96,9 +113,39 @@ const Hero = () => {
             <p className="text-2xl font-bold"> 2M+ users
     </p>
   </div>
-</div>
-
-    </section>
+        </div>
+         {/* Smooth gradient fade to next section */}
+  <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+      </section>
+      <section className="relative bg-white py-20 transition-colors duration-700">
+      <div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-pink-700 leading-tight text-center fold ">Why Choose Swiftpay</h2>
+          <p className="text-gray-700 text-base sm:text-lg md:text-2xl text-center">Everything you need to manage payments efficiently and securely</p>
+      </div>
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-16 px-6">
+      <FeaturedCard
+        icon={<FiZap className="w-6 h-6" />}
+        title="Fast Transfers"
+        description="Send money in seconds, not days. Our lightning-fast infrastructure ensures instant transactions worldwide."
+      />
+      <FeaturedCard
+        icon={<FaShieldAlt className="w-6 h-6" />}
+        title="Secure Payments"
+        description="Your data and transactions are encrypted and protected end-to-end for total peace of mind."
+      />
+      <FeaturedCard
+        icon={<FiGlobe className="w-6 h-6" />}
+        title="Global Reach"
+        description="SwiftPay lets you send and receive payments across 150+ countries, instantly and securely."
+          />
+          <FeaturedCard
+        icon={<MdSupportAgent className="w-6 h-6" />}
+        title="24/7 Support"
+        description="Our dedicated support team is always available to help you with any questions or issues."
+      />
+    </div>
+     </section>
+      </div>
   );
 };
 
